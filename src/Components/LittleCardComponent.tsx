@@ -9,6 +9,9 @@ const LittleCardComponent = (
         arrow: string
         value:string
         cardBackground: string
+        pTagClass: string
+        hOnetags: string
+        valueClass: string
     }
 ) => {
   return (
@@ -17,7 +20,7 @@ const LittleCardComponent = (
       <div className="">
         <Row>
         <Col className='d-flex justify-content-start align-items-end'>
-        <p className='d-flex justify-content-center align-items-center'>{props.description}</p></Col>   
+        <p className={`${props.pTagClass} d-flex justify-content-center align-items-center `}>{props.description}</p></Col>   
         <Col className='d-flex justify-content-end align-items-start'>     
         <img className='d-flex justify-content-end' src={props.mediaIcon}  alt="Social Media Icon"/></Col>
         </Row>
@@ -26,12 +29,12 @@ const LittleCardComponent = (
         <div className=''>
         <Row>
             <Col className='d-flex justify-content-start align-items-end'>
-            <h1 className=''>{props.numberCount}</h1>
+            <h1 className={`${props.hOnetags}`}>{props.numberCount}</h1>
             </Col>
 
             <Col className='d-flex justify-content-end align-items-end'>
             <img className='d-flex justify-content-center align-items-center' src={props.arrow} alt="" />
-            <p className='d-flex justify-content-center align-items-end'>{props.value}</p>
+            <p className={`${props.valueClass} d-flex justify-content-center align-items-end`}>{props.value}</p>
             </Col>
             </Row>
         </div>

@@ -2,6 +2,7 @@
     background-color: #1d2029;
     
 }
+
 .BackgroundTwo{
     background-color: hsl(227, 47%, 96%);
 }
@@ -69,12 +70,13 @@
 }
 
 
-.cardsbackground:hover{
-    background-color: hsl(228,26%,27%)
-}
+
 .cardsbackground{
     background-color: #252b43;
     border-radius: 2%;
+}
+.cardsbackground:hover{
+    background-color: hsl(228,26%,27%)
 }
 .cardsbackgroundTwo{
     background-color: hsl(222,50%,96%);

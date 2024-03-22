@@ -41,7 +41,9 @@ const HomeComponent = () => {
   // };
 
   return (
+
     <div className={`${darkModeSwitch ? "" : "Background"}`}>
+      <div className={`${darkModeSwitch ? "" : "BackSquare"}`}>
       <Container>
         <div className="pt-4">
           <Row>
@@ -72,88 +74,83 @@ const HomeComponent = () => {
             </Col>
           </Row>
           <Row>
-            <Col className="p-10">
+            <Col className="p-10 col-sm-5 col-md-3">
               <CardComponent
                 cardTopStrip="topStripFaceBook"
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
-                socialMediaIcon={facebook}
-                userName={`${
+                userNameClass={`${
                   darkModeSwitch ? "pTwo" : "pOne"
-                } @nathanf`}
-                followerNumber={`${
-                  darkModeSwitch ? 'hTwo' : 'hOne'
-                } 1987`}
+                }`}
+                valueClass={'upArrowTxt'}
                 changeClass={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
+                socialMediaIcon={facebook}
+                userName={`@nathanf`}
+                followerNumber={` 1987`}
+                
                 caption="F O L L O W E R S"
                 arrowIcon={UpArrow}
-                value={`${
-                  darkModeSwitch ? "upArrowTxt" : "upArrowTxt"
-                }12 Today`}
+                value={`12 Today`}
               />
             </Col>
-            <Col className="p-10">
+            <Col className="p-10 col-sm-5 col-md-3">
               <CardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
                 cardTopStrip="topStripTwitter"
                 socialMediaIcon={twitter}
-                userName={`${
+                userNameClass={`${
                   darkModeSwitch ? "pTwo" : "pOne"
-                }@nathanf`}
-                followerNumber={`${
-                  darkModeSwitch ? "hTwo" : "hOne"
-                }1044`}
+                }`}
+                valueClass={'upArrowTxt'}
                 changeClass={ darkModeSwitch ? 'hTwo' : 'hOne'}
+                userName={`@nathanf`}
+                followerNumber={`1044`}
                 caption="F O L L O W E R S"
                 arrowIcon={UpArrow}
-                value={`${
-                  darkModeSwitch ? "upArrowTxt" : "upArrowTxt"
-                }12 Today`}
+                value={`12 Today`}
               />
             </Col>
-            <Col className="p-10">
+            <Col className="p-10 col-sm-5 col-md-3">
               <CardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
+
+                userNameClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'downArrowTxt'}
+                changeClass={ darkModeSwitch ? 'hTwo' : 'hOne'}
                 cardTopStrip="topStripInstagram"
                 socialMediaIcon={Instagram}
-                userName={`${
-                  darkModeSwitch ? "pTwo" : "pOne"
-                }Nathan F.`}
-                followerNumber={`${
-                  darkModeSwitch ? "hTwo" : "hOne"
-                }8239`}
-                changeClass={ darkModeSwitch ? 'hTwo' : 'hOne'}
+                userName={`Nathan F.`}
+                followerNumber={`8239`}
                 caption="S U B S C R I B E R S"
                 arrowIcon={DownArrow}
-                value={`${
-                  darkModeSwitch ? "upArrowTxt" : "upArrowTxt"
-                }12 Today`}
+                value={`12 Today`}
               />
             </Col>
-            <Col className="p-10">
+            <Col className="p-10 col-md-3">
               <CardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
                 cardTopStrip="topStripYoutube"
-                socialMediaIcon={Youtube}
-                userName={`${
+                userNameClass={`${
                   darkModeSwitch ? "pTwo" : "pOne"
-                }@realnathanf`}
-                followerNumber={`${
-                  darkModeSwitch ? "hTwo" : "hOne"
-                }11k`}
+                }`}
+                valueClass={'upArrowTxt'}
                 changeClass={ darkModeSwitch ? 'hTwo' : 'hOne'}
+                socialMediaIcon={Youtube}
+                userName={`@realnathanf`}
+                followerNumber={`11k`}
                 caption="F O L L O W E R S"
                 arrowIcon={UpArrow}
-                value={`${
-                  darkModeSwitch ? "upArrowTxt" : "upArrowTxt"
-                }12 Today`}
+                value={`12 Today`}
               />
             </Col>
           </Row>
@@ -166,35 +163,51 @@ const HomeComponent = () => {
             </h1>
           </Row>
           <Row>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
                 description="Page Views"
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'upArrowTxt'}
                 mediaIcon={facebook}
                 numberCount="87"
                 arrow={UpArrow}
                 value="3%"
               />
             </Col>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'downArrowTxt'}
                 description="Likes"
                 mediaIcon={facebook}
                 numberCount="52"
-                arrow={UpArrow}
+                arrow={DownArrow}
                 value="2%"
               />
             </Col>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'upArrowTxt'}
                 description="Likes"
                 mediaIcon={Instagram}
                 numberCount="5462"
@@ -202,14 +215,20 @@ const HomeComponent = () => {
                 value="2257%"
               />
             </Col>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
                 }`}
                 description="profile Views"
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
                 mediaIcon={Instagram}
                 numberCount="52k"
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'upArrowTxt'}
                 arrow={UpArrow}
                 value="1375%"
               />
@@ -218,7 +237,7 @@ const HomeComponent = () => {
         </div>
         <div>
           <Row>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
@@ -226,11 +245,17 @@ const HomeComponent = () => {
                 description="Retweets"
                 mediaIcon={twitter}
                 numberCount="117"
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'upArrowTxt'}
                 arrow={UpArrow}
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
                 value="303%"
               />
             </Col>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
@@ -238,11 +263,17 @@ const HomeComponent = () => {
                 description="Likes"
                 mediaIcon={twitter}
                 numberCount="507"
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'upArrowTxt'}
                 arrow={UpArrow}
                 value="553%"
               />
             </Col>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
@@ -250,11 +281,17 @@ const HomeComponent = () => {
                 description="Likes"
                 mediaIcon={Youtube}
                 numberCount="107"
-                arrow={UpArrow}
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'downArrowTxt'}
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
+                arrow={DownArrow}
                 value="19%"
               />
             </Col>
-            <Col>
+            <Col className="col-sm-3 col-md-3">
               <LittleCardComponent
                 cardBackground={`${
                   darkModeSwitch ? "cardsbackgroundTwo" : "cardsbackground"
@@ -262,13 +299,20 @@ const HomeComponent = () => {
                 description="Total Views"
                 mediaIcon={Youtube}
                 numberCount="1407"
-                arrow={UpArrow}
+                pTagClass={`${
+                  darkModeSwitch ? "pTwo" : "pOne"
+                }`}
+                valueClass={'downArrowTxt'}
+                hOnetags={ darkModeSwitch ? 'hTwo' : 'hOne'}
+
+                arrow={DownArrow}
                 value="12%"
               />
             </Col>
           </Row>
         </div>
       </Container>
+    </div>
     </div>
   );
 };
