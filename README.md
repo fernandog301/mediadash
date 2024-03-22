@@ -1,3 +1,7 @@
+#Peer reviewed by Liam Garcia
+#Peer comment
+Vercel link didn't work. It's responsiveness is alright, it breaks when scaling down to mobile, and for tablet it just shrinks sizes. The top cards are missing their background. Toggle button css is off. The colors are on the outside and not on the inside of the toggle button. Missing cursor pointer. Bottom cards do have a hover effect. Missing the background off color rectangle. Overall, it was almost there visually but its missing the responsiveness.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
