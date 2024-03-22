@@ -1,0 +1,124 @@
+.Background{
+    background-color: #1d2029;
+    
+}
+.BackgroundTwo{
+    background-color: hsl(227, 47%, 96%);
+}
+.pOne{
+    color: #fff;
+}
+
+.p-10{
+    padding-bottom: 20%;
+}
+.pt-10{
+    padding-top: 10%;
+}
+
+.pTwo{
+    color: black;
+}
+.caption{
+    color: gray;
+}
+
+.hOne{
+    color: #fff;
+}
+.hTwo{
+    color: black;
+}
+.upArrowTxt{
+ color: hsl(163, 72%, 41%);
+}
+.downArrowTxt{
+    color: hsl(356, 69%, 56%);
+}
+
+
+.switchBackground{
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))
+}
+
+.switchBackgroundTwo{
+    background: hsl(230, 22%, 74%) ;
+}
+
+.topStripFaceBook{
+    background-color: hsl(208, 92%, 53%);
+    border-radius: 8px 8px 0 0;
+    height: 4px;
+
+}
+.topStripYoutube{
+    background-color: hsl(348, 97%, 39%);
+    border-radius: 8px 8px 0 0;
+    height: 4px;
+}
+.topStripInstagram{
+    background-color: rgb(253, 196, 104);
+    background: linear-gradient(90deg, rgba(253,196, 104, 1) 0%, rgba(223,73,150,1) 100%);
+    border-radius: 8px 8px 0 0;
+    height: 4px;
+}
+.topStripTwitter{
+    background-color: hsl(203, 89%, 53%);
+    border-radius: 8px 8px 0 0;
+    height: 4px;
+}
+
+
+.cardsbackground:hover{
+    background-color: hsl(228,26%,27%)
+}
+.cardsbackground{
+    background-color: #252b43;
+    border-radius: 2%;
+}
+.cardsbackgroundTwo{
+    background-color: hsl(222,50%,96%);
+    border-radius: 2%;
+}
+.cardsbackgroundTwo:hover{
+    background-color: hsl(232,33%,91%);
+}
+.facebook{
+    border-top: hsl(208, 92%, 53%);
+    border-radius: 8px 8px 0 0;
+    height: 4px;
+}
+
+/* 
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.google.com/specimen/Inter);
+    font-weight: 400, 700;
+}
+h1{
+    font-family: Inter;
+    font-weight: 700;
+} */
+
+/* .colors{
+- Facebook: hsl(208, 92%, 53%)
+- Twitter: hsl(203, 89%, 53%)
+- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+- YouTube: hsl(348, 97%, 39%)
+} */
+
+/* .DarkColorsCards{
+- Very Dark Blue (BG): hsl(230, 17%, 14%)
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
+- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- White (Text): hsl(0, 0%, 100%)
+}
+
+.lightTheme{
+    White (BG): hsl(0, 0%, 100%)
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+- Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+- Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+- Very Dark Blue (Text): hsl(230, 17%, 14%)
+} */
